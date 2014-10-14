@@ -1,0 +1,11 @@
+extends layout
+
+block content
+	h1 Hello Boulder! #{title}
+	h3= title
+	div(data-title=title) This div has a data attribute
+	ul
+		for library in libraries
+			li= library
+block footer
+	h3 This is the footer
